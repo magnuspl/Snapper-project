@@ -742,6 +742,7 @@ p.boxHeader {
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
+    padding-bottom: 20px;
 }
 
 .tab button {
@@ -750,13 +751,13 @@ p.boxHeader {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
     font-size: 17px;
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    border-bottom: solid 3px #fe672d;
+    color: #fe672d;
+    margin-bottom: -3px;
 }
 
 .tab button.active {
@@ -766,4 +767,18 @@ p.boxHeader {
 .tabcontent {
     display: none;
     border-top: none;
+}
+
+.tablinks {
+  margin-right:20px;
+  margin-left:20px;
+}
+
+/* Person */
+
+.Person {
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin: 28px;
 }
