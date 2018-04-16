@@ -678,10 +678,6 @@ div {
     font-weight: bold;
 }
 
-.elementPerson {
-    display: flex;
-}
-
 header.header {
     float: left;
     width: 100%;
@@ -694,14 +690,13 @@ header.header {
 .elementPerson {
     margin-top: 15px;
     margin-left: 10px;
-}
-
-li {
+    width: 350px;
     display: flex;
 }
 
 li {
     background: white;
+    display: flex;
     margin: 0 auto;
     margin-top: 20px;
     list-style: none;
@@ -732,6 +727,7 @@ ul.Employee {
 .element {
     padding: 5vh;
     margin: 0 auto;
+    width: 150px;
 }
 
 p.boxHeader {
@@ -743,13 +739,11 @@ p.boxHeader {
 
 /* Tabs */
 
-/* Style the tab */
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
     float: left;
@@ -761,17 +755,14 @@ p.boxHeader {
     font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
     display: none;
     border-top: none;
