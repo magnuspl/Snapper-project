@@ -8,13 +8,14 @@ function loadData() {
   json.forEach((element, index) => {
     arr.push(element)
   });
+  console.log(arr)
   return arr
 }
 
 const ListItem = ListItem => (
   <div className="list">
     <ul className="Employee">{loadData().map(function(item, i){
-        return <li>
+        return <li key={i}>
           <div className="element">
             {loadData()[i].date}
           </div>

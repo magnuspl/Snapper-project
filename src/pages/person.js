@@ -8,6 +8,7 @@ import Tabs from '../components/Tabs'
 
 const SecondPage = () => (
   <div>
+     <Link to="/">List</Link>
     <div className="header">
       <TaskBox/>
       <ConversationBox/>

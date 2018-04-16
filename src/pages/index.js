@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import jsonPerson from './person.json'
 import jsonPersons from './persons.json'
 import TaskBox from '../components/TaskBox'
+import header from '../components/header'
 import ConversationBox from '../components/TaskBox'
 
 function loadData() {
@@ -71,7 +72,9 @@ getImagePath()
 
 const IndexPage = () => (
   <div>
+    <Link to="/person">Person</Link>
   <div className="header">
+
     <TaskBox/>
     <ConversationBox/>
   </div>
@@ -79,7 +82,7 @@ const IndexPage = () => (
 
     <div>
         <ul className="Employee">{loadData().map(function(item, i){
-            return <li>
+            return <li key={i}>
               <div className="elementPerson">
                 <div className="image">
                   <img src={require(getImagePath()[i])} className="portrait" alt="Smiley face" height="102" width="102"></img>
