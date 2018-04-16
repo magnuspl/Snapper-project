@@ -622,3 +622,157 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+body {
+  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f3f3f5;
+}
+
+.App-header {
+  background-color: #f3f3f5 !important;
+}
+
+header.header {
+    display: inline-flex;
+}
+
+p.textHeader {
+    text-align: left;
+    color: #717172;
+    font-size: larger;
+}
+
+.header {
+    display: flex;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.name {
+  padding: 15px;
+}
+
+section {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.list {
+    width: 94%;
+    margin: 0 auto;
+}
+
+div {
+    max-width: 100%;
+}
+
+/* List styling */
+
+.name {
+    font-weight: bold;
+}
+
+.elementPerson {
+    display: flex;
+}
+
+header.header {
+    float: left;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+}
+
+.elementPerson {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+li {
+    display: flex;
+}
+
+li {
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    list-style: none;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+ul.Employee {
+  display: contents !important;
+  color: #808080;
+  padding-bottom: 3px;
+  font-size: 12px;
+}
+
+/* Box styling */
+
+.box {
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.element {
+    padding: 5vh;
+    margin: 0 auto;
+}
+
+p.boxHeader {
+    text-align: left;
+    color: black;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+/* Tabs */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
