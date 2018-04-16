@@ -13,6 +13,7 @@ const SecondPage = () => (
       <ConversationBox/>
     </div>
     <div className="list">
+      <Tabs/>
     </div>
   </div>
 )
