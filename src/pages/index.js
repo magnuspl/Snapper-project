@@ -41,7 +41,6 @@ function setTaskName(person) {
 }
 
 function getT(person) {
-  var classDiv = document.getElementsByClassName("tasktype");
   if ((loadData()[person].person.statistics.requirements_missing)==0) {
     return getTasks()[person];
   }
