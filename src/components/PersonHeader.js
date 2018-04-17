@@ -9,7 +9,6 @@ function loadData() {
   json.forEach((element, index) => {
     arr.push(element)
   });
-  console.log(arr)
   return arr
 }
 
