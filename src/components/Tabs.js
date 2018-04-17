@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ListItem from './ListItem'
+import MessageBox from './MessageBox'
+
 
 function openTab(event, cityName) {
     var i, tabcontent, tablinks;
@@ -37,7 +39,7 @@ const Tabs = Tabs => (
 
   <div id="Melding" className="tabcontent">
     <h3>Melding</h3>
-    <p>Melding</p>
+    <MessageBox/>
   </div>
 
   <div id="Kurs" className="tabcontent">

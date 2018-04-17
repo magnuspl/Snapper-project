@@ -14,11 +14,15 @@ function loadData() {
 
 const ListItem = ListItem => (
   <div className="list">
-    <ul className="Employee">{loadData().map(function(item, i){
+    <ul className="Course">{loadData().map(function(item, i){
         return <li key={i}>
-          <div className="element">
-            {loadData()[i].date}
+          <div className="course-element">
+            <p>{loadData()[i].date}</p>
+            <p>{loadData()[i].competance.course}</p>
+            <p>{loadData()[i].competance.coursetypename}</p>
           </div>
+
+
       </li>
       })}
     </ul>

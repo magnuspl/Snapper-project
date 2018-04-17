@@ -216,8 +216,8 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -688,7 +688,7 @@ header.header {
 }
 
 .elementPerson {
-    margin-top: 15px;
+    margin-top: 1%;
     margin-left: 10px;
     width: 350px;
     display: flex;
@@ -697,8 +697,6 @@ header.header {
 li {
     background: white;
     display: flex;
-    margin: 0 auto;
-    margin-top: 20px;
     list-style: none;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
@@ -709,6 +707,16 @@ ul.Employee {
   color: #808080;
   padding-bottom: 3px;
   font-size: 12px;
+}
+
+.phoneNumber {
+    color: grey;
+    font-weight: 400;
+}
+
+.name {
+    color: black;
+    font-weight: bolder;
 }
 
 /* Box styling */
@@ -725,9 +733,35 @@ ul.Employee {
 }
 
 .element {
-    padding: 5vh;
     margin: 0 auto;
     width: 150px;
+    margin-top: 1%;
+}
+
+.conversation {
+    padding-top: 15px;
+}
+
+.tasktype {
+  padding-top:15px;
+}
+
+.course-element {
+    padding: 5vh;
+}
+
+.conversationDate {
+    font-size: large;
+    color: black;
+}
+
+.taskamount {
+    font-size: large;
+    color: black;
+}
+
+.Title {
+    padding-left: 30px;
 }
 
 p.boxHeader {
@@ -779,6 +813,34 @@ p.boxHeader {
 .Person {
     background: white;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    padding: 20px;
+    padding: 10px;
     margin: 28px;
+    display: flex;
+}
+
+.Name {
+    text-transform: uppercase;
+    padding-top: 3%;
+    margin-left: 20px;
+}
+
+textarea {
+    border: none;
+}
+
+textarea:focus {
+    outline:none;
+}
+
+.Name {
+  text-transform: uppercase;
+}
+
+.image {
+  padding-top: 1%;
+}
+
+ul.Course {
+  margin-left: -25px;
+margin-right: -25px;
 }

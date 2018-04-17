@@ -41,6 +41,7 @@ function setTaskName(person) {
 }
 
 function getT(person) {
+  var classDiv = document.getElementsByClassName("tasktype");
   if ((loadData()[person].person.statistics.requirements_missing)==0) {
     return getTasks()[person];
   }
@@ -78,17 +79,22 @@ const IndexPage = () => (
     <TaskBox/>
     <ConversationBox/>
   </div>
+  <div className="Title">
+    <p>Ansatte</p>
+  </div>
   <div className="list">
 
     <div>
         <ul className="Employee">{loadData().map(function(item, i){
-            return <li key={i}>
+            return <li className="employee-list-item" key={i}>
               <div className="elementPerson">
                 <div className="image">
                   <img src={require(getImagePath()[i])} className="portrait" alt="Smiley face" height="102" width="102"></img>
                 </div>
               <div className="name">
+                <div className="fullname">
                 <p>{loadData()[i].person.fullname}</p>
+                </div>
                   <div className="phoneNumber">
                 <p>email@snapper.no / {loadData()[i].person.mobile}</p>
                   </div>
@@ -97,15 +103,21 @@ const IndexPage = () => (
             <div className="element">
               <div className="conversation">
                 <p>Neste samtale</p>
+              </div>
+              <div className="conversationDate">
                 <p>Not available</p>
               </div>
             </div>
             <div className="element">
-              <div className="tasks">
+              <div className="tasktype">
               <p>{setTaskName(i)}</p>
-                {
-                  getT(i)
-                }
+
+              </div>
+              <div className="taskamount">
+                <p>
+                  {
+                    getT(i)
+                  }</p>
               </div>
             </div>
           </li>

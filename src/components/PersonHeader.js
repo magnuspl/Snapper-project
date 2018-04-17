@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import jsonPerson from '../pages/person.json'
+import image from '../pages/97.png'
 
 function loadData() {
   var json = jsonPerson.now;
@@ -15,10 +16,10 @@ function loadData() {
 const PersonHeader = PersonHeader => (
   <div className="Person">
     <div className="image">
-      image
+      <img src={image} height="60" width="60"></img>
     </div>
-    <div className="Name"></div>
-      Daniel Dahlberg
+    <div className="Name">
+      <h4>DANIEL DAHLBERG</h4></div>
   </div>
 )
 
