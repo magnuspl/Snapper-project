@@ -4,10 +4,15 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "chart.js": "^2.7.2",
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-helmet": "^5.2.0"
+    "jquery": "^3.3.1",
+    "react-chartjs-2": "^2.7.0",
+    "react-helmet": "^5.2.0",
+    "react-svg-donut-chart": "^1.0.0",
+    "victory": "^0.25.7"
   },
   "keywords": [
     "gatsby"

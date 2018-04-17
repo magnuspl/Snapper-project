@@ -4,7 +4,7 @@ import jsonPerson from './person.json'
 import jsonPersons from './persons.json'
 import TaskBox from '../components/TaskBox'
 import header from '../components/header'
-import ConversationBox from '../components/TaskBox'
+import ConversationBox from '../components/ConversationBox'
 
 function loadData() {
   var json = jsonPersons.persons;
@@ -75,7 +75,6 @@ const IndexPage = () => (
   <div>
     <Link to="/person">Person</Link>
   <div className="header">
-
     <TaskBox/>
     <ConversationBox/>
   </div>

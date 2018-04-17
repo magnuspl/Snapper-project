@@ -18,11 +18,9 @@ const ListItem = ListItem => (
         return <li key={i}>
           <div className="course-element">
             <p>{loadData()[i].date}</p>
-            <p>{loadData()[i].competance.course}</p>
+            <p className="coursename">{loadData()[i].competance.course}</p>
             <p>{loadData()[i].competance.coursetypename}</p>
           </div>
-
-
       </li>
       })}
     </ul>

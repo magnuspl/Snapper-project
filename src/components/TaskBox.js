@@ -1,17 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Ansatte from './Charts/Ansatte'
+import Mine from './Charts/Mine'
 
 const TaskBox = TaskBox => (
+  <div>
   <div className="box">
-    <p className="boxHeader">Oppgaver</p>
-    <div className="row">
-      <div className="element">
-        Mine:
-      </div>
-    <div className="element">
-        Ansattes:
-      </div>
+    <h4>OPPGAVER</h4>
+    <div className="boxTask">
+    <Mine/>
+    <Ansatte/>
     </div>
+  </div>
+
   </div>
 )
 

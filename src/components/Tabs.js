@@ -28,22 +28,18 @@ const Tabs = Tabs => (
   </div>
 
   <div id="Bruker" className="tabcontent">
-    <h3>Bruker</h3>
     <p>Bruker</p>
   </div>
 
   <div id="Oppgaver" className="tabcontent">
-    <h3>Oppgaver</h3>
     <ListItem/>
   </div>
 
   <div id="Melding" className="tabcontent">
-    <h3>Melding</h3>
     <MessageBox/>
   </div>
 
   <div id="Kurs" className="tabcontent">
-    <h3>Kurs</h3>
     <p>Kurs</p>
   </div>
 
