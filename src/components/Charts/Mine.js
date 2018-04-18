@@ -15,6 +15,7 @@ const Mine = () => (
               { x: 10, y: 10 },
             ]}
         />
+      <p className="chart-name">Mine</p>
   </div>
 )
 

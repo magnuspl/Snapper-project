@@ -15,7 +15,7 @@ function loadData() {
 const PersonHeader = () => (
   <div className="person">
     <div className="image">
-      <img src={image} height="60" width="60"></img>
+      <img src={image} height="90" width="90"></img>
     </div>
     <div className="name">
       <h4>DANIEL DAHLBERG</h4></div>

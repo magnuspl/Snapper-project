@@ -473,6 +473,7 @@
 }
  ul li {
      padding-left: 0;
+     flex-wrap: wrap;
 }
  li > ol {
      margin-left: 1.45rem;
@@ -585,6 +586,19 @@
      color: #717172;
      font-size: larger;
 }
+
+@media only screen and (max-width: 1048px) {
+    .header {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .header {
+        margin-left:-25px;
+    }
+}
+
  .header {
      display: flex;
 }
@@ -667,6 +681,7 @@
  .course-element {
      padding: 5vh;
 }
+
  .conversation-date {
      font-size: large;
      color: black;
@@ -724,7 +739,7 @@
 }
  .name {
      text-transform: uppercase;
-     padding-top: 3%;
+     padding-top: 5%;
      margin-left: 20px;
 }
  textarea {
@@ -747,6 +762,13 @@
      line-height: 8px;
      font-size: 15px;
 }
+
+@media only screen and (max-width: 900px) {
+  .course-element {
+      line-height: 30px;
+ }
+}
+
 /* Doughnut */
  .chart {
      margin: 0 auto;
@@ -859,4 +881,11 @@ p.box-header {
     padding: 10px;
     display: -ms-flexbox;
     display: flex;
+}
+
+p.chart-name {
+    padding-left: 35%;
+    margin-bottom: -5px;
+    margin-top: -20px;
+    color: #808294;
 }
