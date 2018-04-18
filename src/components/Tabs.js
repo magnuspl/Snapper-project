@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ListItem from './ListItem'
+import Courses from './Courses'
 import MessageBox from './MessageBox'
-
+import Person from './Person'
 
 function openTab(event, cityName) {
     var i, tabcontent, tablinks;
@@ -23,12 +24,12 @@ const Tabs = Tabs => (
     <div className="tab">
     <button className="tab-links" onClick={()=>{openTab(event, 'Bruker'); }}>Bruker</button>
     <button className="tab-links" onClick={()=>{openTab(event, 'Oppgaver'); }}>Oppgaver</button>
-    <button className="tab-links" onClick={()=>{openTab(event, 'Melding'); }}>Melding</button>
-    <button className="tab-links" onClick={()=>{openTab(event, 'Kurs'); }}>Kurs</button>
+    <button className="tab-links" onClick={()=>{openTab(event, 'Melding'); }}>Send melding</button>
+    <button className="tab-links" onClick={()=>{openTab(event, 'Kurs'); }}>Meld på kurs</button>
   </div>
 
   <div id="Bruker" className="tab-content">
-    <p>Bruker</p>
+    <Person/>
   </div>
 
   <div id="Oppgaver" className="tab-content">
@@ -40,7 +41,7 @@ const Tabs = Tabs => (
   </div>
 
   <div id="Kurs" className="tab-content">
-    <p>Kurs</p>
+    <Courses/>
   </div>
 
 </div>
