@@ -11,9 +11,9 @@ function loadData() {
   return arr
 }
 
-const ListItem = ListItem => (
+const ListItem = () => (
   <div className="list">
-    <ul className="Course">{loadData().map(function(item, i){
+    <ul className="course">{loadData().map(function(item, i){
         return <li key={i}>
           <div className="course-element">
             <p>{loadData()[i].date}</p>

@@ -12,12 +12,12 @@ function loadData() {
   return arr
 }
 
-const PersonHeader = PersonHeader => (
-  <div className="Person">
+const PersonHeader = () => (
+  <div className="person">
     <div className="image">
       <img src={image} height="60" width="60"></img>
     </div>
-    <div className="Name">
+    <div className="name">
       <h4>DANIEL DAHLBERG</h4></div>
   </div>
 )

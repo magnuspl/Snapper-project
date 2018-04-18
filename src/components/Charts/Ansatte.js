@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { VictoryPie } from 'victory';
 
-const Ansatte = Ansatte => (
+const Ansatte = () => (
   <div>
      <VictoryPie
        padAngle={1}

@@ -12,9 +12,8 @@ const SecondPage = () => (
   <div>
     <Link to="/">List</Link>
     <div className="header">
-    <TaskBox/>
-    <ConversationBox/>
-
+      <TaskBox/>
+      <ConversationBox/>
     </div>
     <PersonHeader/>
     <div className="list">

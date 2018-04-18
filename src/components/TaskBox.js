@@ -7,7 +7,7 @@ const TaskBox = TaskBox => (
   <div>
   <div className="box">
     <h4>OPPGAVER</h4>
-    <div className="boxTask">
+    <div className="box-task">
     <Mine/>
     <Ansatte/>
     </div>

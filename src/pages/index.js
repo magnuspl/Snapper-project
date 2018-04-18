@@ -40,7 +40,7 @@ function setTaskName(person) {
   }
 }
 
-function getT(person) {
+function getType(person) {
   if ((loadData()[person].person.statistics.requirements_missing)==0) {
     return getTasks()[person];
   }
@@ -77,45 +77,40 @@ const IndexPage = () => (
     <TaskBox/>
     <ConversationBox/>
   </div>
-  <div className="Title">
+  <div className="title">
     <p>Ansatte</p>
   </div>
   <div className="list">
-
     <div>
-        <ul className="Employee">{loadData().map(function(item, i){
+        <ul className="employee">{loadData().map(function(item, i){
             return <li className="employee-list-item" key={i}>
-              <div className="elementPerson">
+              <div className="element-person">
                 <div className="image">
-                  <img src={require(getImagePath()[i])} className="portrait" alt="Smiley face" height="102" width="102"></img>
+                  <img src={require(getImagePath()[i])} className="portrait" height="102" width="102"></img>
                 </div>
               <div className="name">
                 <div className="fullname">
-                <p>{loadData()[i].person.fullname}</p>
+                  <p>{loadData()[i].person.fullname}</p>
                 </div>
-                  <div className="phoneNumber">
-                <p>email@snapper.no / {loadData()[i].person.mobile}</p>
-                  </div>
-                    </div>
+                <div className="phonenumber">
+                  <p>email@snapper.no / {loadData()[i].person.mobile}</p>
+                </div>
+              </div>
             </div>
             <div className="element">
               <div className="conversation">
                 <p>Neste samtale</p>
               </div>
-              <div className="conversationDate">
+              <div className="conversation-date">
                 <p>Not available</p>
               </div>
             </div>
             <div className="element">
               <div className="tasktype">
               <p>{setTaskName(i)}</p>
-
               </div>
               <div className="taskamount">
-                <p>
-                  {
-                    getT(i)
-                  }</p>
+                <p>{getType(i)}</p>
               </div>
             </div>
           </li>

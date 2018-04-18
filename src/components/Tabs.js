@@ -6,11 +6,11 @@ import MessageBox from './MessageBox'
 
 function openTab(event, cityName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tab-links");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -21,25 +21,25 @@ function openTab(event, cityName) {
 const Tabs = Tabs => (
   <div className="tabs">
     <div className="tab">
-    <button className="tablinks" onClick={()=>{openTab(event, 'Bruker'); }}>Bruker</button>
-    <button className="tablinks" onClick={()=>{openTab(event, 'Oppgaver'); }}>Oppgaver</button>
-    <button className="tablinks" onClick={()=>{openTab(event, 'Melding'); }}>Melding</button>
-    <button className="tablinks" onClick={()=>{openTab(event, 'Kurs'); }}>Kurs</button>
+    <button className="tab-links" onClick={()=>{openTab(event, 'Bruker'); }}>Bruker</button>
+    <button className="tab-links" onClick={()=>{openTab(event, 'Oppgaver'); }}>Oppgaver</button>
+    <button className="tab-links" onClick={()=>{openTab(event, 'Melding'); }}>Melding</button>
+    <button className="tab-links" onClick={()=>{openTab(event, 'Kurs'); }}>Kurs</button>
   </div>
 
-  <div id="Bruker" className="tabcontent">
+  <div id="Bruker" className="tab-content">
     <p>Bruker</p>
   </div>
 
-  <div id="Oppgaver" className="tabcontent">
+  <div id="Oppgaver" className="tab-content">
     <ListItem/>
   </div>
 
-  <div id="Melding" className="tabcontent">
+  <div id="Melding" className="tab-content">
     <MessageBox/>
   </div>
 
-  <div id="Kurs" className="tabcontent">
+  <div id="Kurs" className="tab-content">
     <p>Kurs</p>
   </div>
 

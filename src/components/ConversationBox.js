@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import image from '../pages/1.png'
 
 
-const ConversationBox = ConversationBox => (
+const ConversationBox = () => (
   <div>
     <div className="box">
-      <p className="boxHeader">Samtaler</p>
+      <p className="box-header">Samtaler</p>
       <div className="row">
           <div className="element">
           <p>Gjennomførte:</p>
@@ -20,7 +21,13 @@ const ConversationBox = ConversationBox => (
           <div className="next-element">
           Neste:
         <div className="next-element-person">
-          <p className="person">Jostein Leira</p>
+          <div className="image">
+            <img src={image} height="60" width="60"></img>
+          </div>
+          <div className="next-person-name">
+            <p className="next-person">Jostein Leira</p>
+            <p className="next-date">mandag 7.mars</p>
+          </div>
         </div>
         </div>
       </div>
