@@ -18,7 +18,6 @@ function openTab(event, cityName) {
     document.getElementById(cityName).style.display = "block";
     event.currentTarget.className += " active";
 }
-
 const Tabs = Tabs => (
   <div className="tabs">
     <div className="tab">
@@ -43,7 +42,6 @@ const Tabs = Tabs => (
   <div id="Kurs" className="tab-content">
     <Courses/>
   </div>
-
 </div>
 )
 

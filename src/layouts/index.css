@@ -664,6 +664,17 @@
      padding: 30px;
      margin: 30px;
 }
+
+form {
+    text-align: right;
+}
+
+.message-box {
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin: 30px;
+}
  .row {
      display: flex;
 }
@@ -744,6 +755,7 @@
 }
  textarea {
      border: none;
+     width: 80%;
 }
  textarea:focus {
      outline:none;
