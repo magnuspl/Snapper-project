@@ -6,15 +6,12 @@ import TaskBox from '../components/TaskBox'
 import ConversationBox from '../components/ConversationBox'
 import Tabs from '../components/Tabs'
 import PersonHeader from '../components/PersonHeader'
-
+import HeaderBox from '../components/HeaderBox'
 
 const SecondPage = () => (
   <div>
     <Link to="/">List</Link>
-    <div className="header">
-      <TaskBox/>
-      <ConversationBox/>
-    </div>
+    <HeaderBox/>
     <PersonHeader/>
     <div className="list">
       <Tabs/>

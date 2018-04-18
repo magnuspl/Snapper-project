@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 import jsonPerson from './person.json'
 import jsonPersons from './persons.json'
 import TaskBox from '../components/TaskBox'
-import header from '../components/header'
 import ConversationBox from '../components/ConversationBox'
+import HeaderBox from '../components/HeaderBox'
 
 function loadData() {
   var json = jsonPersons.persons;
@@ -73,10 +73,7 @@ getImagePath()
 const IndexPage = () => (
   <div>
     <Link to="/person">Person</Link>
-  <div className="header">
-    <TaskBox/>
-    <ConversationBox/>
-  </div>
+  <HeaderBox/>
   <div className="title">
     <p>Ansatte</p>
   </div>
