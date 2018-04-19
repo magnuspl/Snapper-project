@@ -10,6 +10,7 @@ function loadData() {
 const Person = () => (
   <div className="person-box">
     <div className="course-element">
+      <h1>Brukerinformasjon</h1>
       <p>First name: {loadData().firstname}</p>
       <p>Last name: {loadData().lastname}</p>
       <p>Email: {loadData().email}</p>

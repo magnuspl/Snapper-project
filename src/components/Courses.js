@@ -19,6 +19,7 @@ const Courses = () => (
             <p>{loadData()[i].date}</p>
             <p className="coursename">{loadData()[i].competance.course}</p>
             <p>{loadData()[i].competance.coursetypename}</p>
+            <button className="apply">Meld på</button>
           </div>
       </li>
       })}

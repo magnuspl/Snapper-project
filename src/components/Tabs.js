@@ -17,6 +17,7 @@ function openTab(event, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     event.currentTarget.className += " active";
+    event.preventDefault();
 }
 const Tabs = Tabs => (
   <div className="tabs">
