@@ -4,7 +4,6 @@ import ListItem from './ListItem'
 import Courses from './Courses'
 import MessageBox from './MessageBox'
 import Person from './Person'
-import $ from 'jquery'
 
 function openTab(event, cityName) {
     var i, tabcontent, tablinks;
@@ -19,8 +18,6 @@ function openTab(event, cityName) {
     document.getElementById(cityName).style.display = "block";
     event.currentTarget.className += " active";
 }
-
-$("button.tab-links").click(function() {
 
 });
 
