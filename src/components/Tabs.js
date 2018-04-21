@@ -4,6 +4,7 @@ import ListItem from './ListItem'
 import Courses from './Courses'
 import MessageBox from './MessageBox'
 import Person from './Person'
+import $ from 'jquery'
 
 function openTab(event, cityName) {
     var i, tabcontent, tablinks;
@@ -17,12 +18,16 @@ function openTab(event, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     event.currentTarget.className += " active";
-    event.preventDefault();
 }
+
+$("button.tab-links").click(function() {
+
+});
+
 const Tabs = Tabs => (
   <div className="tabs">
     <div className="tab">
-    <button className="tab-links" onClick={()=>{openTab(event, 'Bruker'); }}>Bruker</button>
+    <button className="tab-links active" onClick={()=>{openTab(event, 'Bruker'); }}>Bruker</button>
     <button className="tab-links" onClick={()=>{openTab(event, 'Oppgaver'); }}>Oppgaver</button>
     <button className="tab-links" onClick={()=>{openTab(event, 'Melding'); }}>Send melding</button>
     <button className="tab-links" onClick={()=>{openTab(event, 'Kurs'); }}>Meld på kurs</button>

@@ -694,9 +694,7 @@ form {
      width: 150px;
      margin-top: 1%;
 }
- .conversation {
-     padding-top: 15px;
-}
+
  .tasktype {
      padding-top:15px;
 }
@@ -735,18 +733,28 @@ form {
      cursor: pointer;
      font-size: 17px;
 }
- .tab button:hover {
+ .tab-links:hover, .tab-links:focus, .tab-links:target, .tab-links:active {
      border-bottom: solid 3px #fe672d;
      color: #fe672d;
      margin-bottom: -3px;
 }
+
  .tab .active {
-     background-color: #ccc;
+    border-bottom: solid 3px #fe672d;
+    color: #fe672d;
+    margin-bottom: -3px;
 }
+
  .tab-content {
      display: none;
      border-top: none;
 }
+
+#Bruker {
+    display: inline-block;
+}
+
+
  .tab-links {
      margin-right:20px;
      margin-left:20px;
@@ -904,6 +912,7 @@ p.box-header {
     padding: 10px;
     display: -ms-flexbox;
     display: flex;
+    width: 1400px;
 }
 
 p.chart-name {
@@ -933,4 +942,71 @@ button.apply:hover {
 
 .course-element {
     width: 100%;
+}
+
+.green {
+    background-color: #2ecc71;
+    box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+div#buttons {
+    float: right;
+    margin-top: -70px;
+}
+
+p.coursename {
+    margin-top: -12px;
+}
+
+p.course-type {
+    margin-bottom: -0px;
+}
+
+.conversation-date {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.element-conversation {
+    padding-top: 24px;
+}
+
+.next-element {
+    padding-left: 12px;
+    padding-top: 17px;
+}
+
+.next-person-name {
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+.next-element-person {
+    margin-bottom: -33px;
+    display: -ms-flexbox;
+    display: flex;
 }

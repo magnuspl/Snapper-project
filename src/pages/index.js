@@ -72,7 +72,6 @@ getImagePath()
 
 const IndexPage = () => (
   <div>
-    <Link to="/person">Person</Link>
   <HeaderBox/>
   <div className="title">
     <p>Ansatte</p>
@@ -83,18 +82,19 @@ const IndexPage = () => (
             return <li className="employee-list-item" key={i}>
               <div className="element-person">
                 <div className="image">
-                  <img src={require(getImagePath()[i])} className="portrait" height="102" width="102"></img>
+                  <img src={require(getImagePath()[i])} className="portrait" height="80" width="80"></img>
                 </div>
               <div className="name">
                 <div className="fullname">
-                  <p>{loadData()[i].person.fullname}</p>
+            <Link to="/person"><p>{loadData()[i].person.fullname}</p></Link>
                 </div>
                 <div className="phonenumber">
                   <p>email@snapper.no / {loadData()[i].person.mobile}</p>
                 </div>
               </div>
+
             </div>
-            <div className="element">
+            <div className="element-conversation">
               <div className="conversation">
                 <p>Neste samtale</p>
               </div>

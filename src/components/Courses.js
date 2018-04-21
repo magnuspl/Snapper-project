@@ -15,11 +15,12 @@ const Courses = () => (
   <div className="list">
     <ul className="course">{loadData().map(function(item, i){
         return <li key={i}>
-          <div className="course-element">
-            <p>{loadData()[i].date}</p>
+            <div className="course-element">
+            <p className="course-date">{loadData()[i].date}</p>
             <p className="coursename">{loadData()[i].competance.course}</p>
-            <p>{loadData()[i].competance.coursetypename}</p>
-            <button className="apply">Meld på</button>
+            <p className="course-type">{loadData()[i].competance.coursetypename}</p>
+            <div id="buttons"><a href="#" className="btn green">Meld på</a></div>
+
           </div>
       </li>
       })}

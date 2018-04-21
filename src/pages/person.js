@@ -10,7 +10,6 @@ import HeaderBox from '../components/HeaderBox'
 
 const SecondPage = () => (
   <div>
-    <Link to="/">List</Link>
     <HeaderBox/>
     <PersonHeader/>
     <div className="list">

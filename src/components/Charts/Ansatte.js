@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { VictoryPie } from 'victory';
 
 const Ansatte = () => (
-  <div>
+  <Link to="/"><div>
      <VictoryPie
        padAngle={1}
        innerRadius={130}
@@ -16,7 +16,7 @@ const Ansatte = () => (
             ]}
         />
       <p className="chart-name">Ansatte</p>
-  </div>
+  </div></Link>
 )
 
 export default Ansatte
