@@ -19,8 +19,6 @@ function openTab(event, cityName) {
     event.currentTarget.className += " active";
 }
 
-});
-
 const Tabs = Tabs => (
   <div className="tabs">
     <div className="tab">
